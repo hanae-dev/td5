@@ -1,5 +1,4 @@
 from main import greet
-def test_greet(capsys):
-    greet("Alice")
-    captured = capsys.readouterr()
-    assert captured.out == "Bonjour, Alice!\n"
+
+def test_greet():
+    assert greet("Alice") == "Bonjour, Alice!\n"
