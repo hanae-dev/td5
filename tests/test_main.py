@@ -1,4 +1,6 @@
 from main import greet
 
 def test_greet():
-    assert greet("Alice") == "Bonjour, Alice!\n"
+    # Vérifie que greet retourne la bonne chaîne
+    assert greet("Alice") == "Hello Alice"
+    assert greet("Hanae") == "Hello Hanae"
